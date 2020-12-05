@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/*start header*/
+header{
+    margin-top: 10vh;
+    height: 55vh;
+    width: 100%;
+    background-color: #F8F7FD;
+    position: relative;
+}
+
+.design-quality {
+    overflow: hidden;
+    float: left;
+    line-height: 5vh;
+    font-size: larger;
+    font-style: italic;
+    color: grey;
+    width: 35%;
+    padding-left: 10vw;
+    padding-top: 10vh;
+}
+
+.design-quality img{
+    position: absolute;
+    left: 10vw;
+    top: 35vh;
+    width: 100px;
+}
+
+.images{
+    justify-content: flex-end;
+}
+
+
+.laptop{
+    position: absolute;
+    right: 10vw;
+    width: 35%;
+    height: 55vh;
+}
+
+.floating-images{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    position: absolute;
+    bottom: 4px;
+    right: 10vw;
+}
+
+.floating-image{
+    border: 5px solid white;
+    margin: 0px 1.5vw;
+    height: 15vh;
+    width: 22%;
+}
+/*end header*/
+
+/*start updates section*/
+.updates{
+    font-family: "Roboto Slab";
+    font-size: larger;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 85%;
+    text-transform: capitalize;
+    margin: 10vh 10vw;
+}
+
+.update-container{
+    display: inline-block;
+    background-color: #F8F7FD;
+    padding: 2%;
+    margin: 0px 1%;
+    text-align: left;
+    width: 25%;
+}
+
+.update-container img{
+    width: 20vw;
+    height: 22vh;
+}
+
+.owner-likes{
+    padding-top: 1vh;
+    display: inline-flex;
+}
+
+.owner-likes img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.owner-likes p{
+    padding: 0px 0.5vw;
+    padding-top: 1vh;
+    font-size: 0.6em;
+}
+
+.owner-likes i{
+    padding-left: 2vw;
+    padding-top: 2.7vh;
+
+}
+/*end updates section*/
+
+/*Responsive*/
+@media (max-width:1054px){
+    header{
+        height: 105vh;
+    }
+
+    .design-quality {
+        float: none;
+        color: grey;
+        width: 100%;
+        padding-top: 10vh;
+    }
+    
+    .design-quality p{
+        width: 90%;
+    }
+    .images{
+        justify-content: center;
+    }
+    .laptop{
+        width: 35%;
+        height: 52vh;
+    }
+
+    .owner-likes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numbers, .far{
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+
+}
